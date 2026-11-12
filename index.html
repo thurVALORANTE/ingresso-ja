@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- lang="pt-BR" informa o idioma da página (leitores de tela e tradutores usam isso) -->
+<html lang="pt-BR">
+<head>
+  <!-- Configurações da página: codificação (acentos), tela de celular e descrição para buscadores -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingresso Já: shows, teatro, esportes, palestras e festivais em Votuporanga e região. Escolha o evento e receba o ingresso no celular.">
+  <meta name="theme-color" content="#4B1E8C">
+  <title>Ingresso Já — Os melhores eventos de Votuporanga e região</title>
+  <!-- Ícone da aba, título da aba e ligação com o arquivo de estilos -->
+  <link rel="icon" href="img/icone-ingresso.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <!-- Link de acessibilidade: só aparece quando o teclado (Tab) chega nele -->
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho: logo e menu de navegação. Os links com # levam para o id de cada seção -->
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="#topo">
+        <img src="img/logo-claro.png" alt="" width="62" height="32">
+        <span>Ingresso Já</span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="botao botao-contorno" href="#">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO com busca -->
+    <section class="hero">
+      <div class="hero-fundo"></div>
+      <div class="container">
+        <div class="hero-texto">
+          <span class="hero-tag">Agenda de novembro e dezembro</span>
+          <h1>Os melhores eventos de Votuporanga e região</h1>
+          <p>Shows, teatro, esportes, palestras e festivais perto de você. Escolha, compre e receba o ingresso no celular.</p>
+
+          <form class="busca" action="#" method="get" role="search">
+            <label class="campo">
+              <span>O que você procura?</span>
+              <input type="text" name="busca" placeholder="Show, peça, palestra...">
+            </label>
+            <label class="campo">
+              <span>Cidade</span>
+              <select name="cidade">
+                <option>Votuporanga</option>
+                <option>Álvares Florence</option>
+                <option>Cosmorama</option>
+                <option>Fernandópolis</option>
+                <option>São José do Rio Preto</option>
+                <option>Valentim Gentil</option>
+              </select>
+            </label>
+            <label class="campo">
+              <span>Data</span>
+              <input type="date" name="data">
+            </label>
+            <button class="botao" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios">
+      <div class="container">
+        <ul class="lista-beneficios">
+          <li>
+            <span class="beneficio-icone"><img src="img/ico-escudo.png" alt="" width="26" height="26"></span>
+            <div>
+              <strong>Compra simples e segura</strong>
+              <p>Do carrinho ao pagamento em poucos passos.</p>
+            </div>
+          </li>
+          <li>
+            <span class="beneficio-icone"><img src="img/ico-celular.png" alt="" width="26" height="26"></span>
+            <div>
+              <strong>Ingresso no celular</strong>
+              <p>Receba o QR Code e entre sem imprimir nada.</p>
+            </div>
+          </li>
+          <li>
+            <span class="beneficio-icone"><img src="img/ico-troca.png" alt="" width="26" height="26"></span>
+            <div>
+              <strong>Troca facilitada</strong>
+              <p>Mudou de planos? Veja as regras de cada evento.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section id="categorias" class="secao">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Explore por categoria</h2>
+          <p>Encontre o tipo de evento ideal para o seu dia.</p>
+        </div>
+        <ul class="grade-categorias">
+          <li><a class="categoria" href="#eventos"><img src="img/evento-show.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Shows</span></a></li>
+          <li><a class="categoria" href="#eventos"><img src="img/evento-teatro.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Teatro</span></a></li>
+          <li><a class="categoria" href="#eventos"><img src="img/evento-esporte.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Esportes</span></a></li>
+          <li><a class="categoria" href="#eventos"><img src="img/evento-palestra.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Palestras</span></a></li>
+          <li><a class="categoria" href="#eventos"><img src="img/evento-festival.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Festivais</span></a></li>
+          <li><a class="categoria" href="#eventos"><img src="img/evento-standup.jpeg" alt="" width="1200" height="896" loading="lazy"><span>Stand-up</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Próximos eventos -->
+    <section id="eventos" class="secao secao-branca">
+      <div class="container">
+        <div class="eventos-topo">
+          <div class="titulo-secao">
+            <h2>Próximos eventos</h2>
+            <p>Garanta o seu lugar antes que acabe.</p>
+          </div>
+          <ul class="filtros">
+            <li><a class="ativo" href="#eventos">Todos</a></li>
+            <li><a href="#eventos">Shows</a></li>
+            <li><a href="#eventos">Teatro</a></li>
+            <li><a href="#eventos">Esportes</a></li>
+            <li><a href="#eventos">Palestras</a></li>
+          </ul>
+        </div>
+
+        <!-- Cada evento é um article (card) com o mesmo molde:
+             imagem + data + selo, depois título, informações e rodapé com preço e botão -->
+        <div class="grade-eventos">
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/evento-show.jpeg" alt="Guitarrista de rock em um palco com holofotes roxos" width="1200" height="896" loading="lazy">
+              <time class="data" datetime="2026-11-14"><strong>14</strong><span>NOV</span></time>
+              <span class="selo">Últimos ingressos</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Show</p>
+                <h3>Noite de Rock Ao Vivo</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Votuporanga · Arena Horizonte</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Sábado · 21h</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>a partir de</span> R$ 80</p>
+                <a class="botao" href="#" aria-label="Comprar ingresso: Noite de Rock Ao Vivo">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/evento-teatro.jpeg" alt="Palco de teatro com cortinas vermelhas abertas" width="1200" height="896" loading="lazy">
+              <time class="data" datetime="2026-11-20"><strong>20</strong><span>NOV</span></time>
+              <span class="selo">Disponível</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Teatro</p>
+                <h3>Cortina Aberta: Peça Clássica</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Fernandópolis · Teatro Aurora</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Sexta · 20h</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>a partir de</span> R$ 60</p>
+                <a class="botao" href="#" aria-label="Comprar ingresso: Cortina Aberta, Peça Clássica">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Evento esgotado: a classe extra "esgotado" muda o visual do card pelo CSS -->
+          <article class="card esgotado">
+            <div class="card-imagem">
+              <img src="img/evento-esporte.jpeg" alt="Torcida com bandeiras em um estádio iluminado à noite" width="1200" height="896" loading="lazy">
+              <time class="data" datetime="2026-11-22"><strong>22</strong><span>NOV</span></time>
+              <span class="selo selo-esgotado">Esgotado</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Esportes</p>
+                <h3>Clássico da Virada</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Votuporanga · Estádio Centenário</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Domingo · 16h</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco preco-esgotado"><span>ingressos</span> Esgotado</p>
+                <a class="botao botao-secundario" href="#" aria-label="Avise-me se surgirem ingressos: Clássico da Virada">Avise-me</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/evento-palestra.jpeg" alt="Auditório com palestrante no palco e plateia" width="1200" height="896" loading="lazy">
+              <time class="data" datetime="2026-11-26"><strong>26</strong><span>NOV</span></time>
+              <span class="selo">Disponível</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Palestra</p>
+                <h3>Fórum de Inovação Digital</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> São José do Rio Preto · Centro de Convenções</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Quinta · 9h</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>a partir de</span> R$ 120</p>
+                <a class="botao" href="#" aria-label="Comprar ingresso: Fórum de Inovação Digital">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/evento-festival.jpeg" alt="Festival ao ar livre com multidão e bandeirinhas coloridas" width="1200" height="896" loading="lazy">
+              <time class="data" datetime="2026-11-28"><strong>28</strong><span>NOV</span></time>
+              <span class="selo">Últimos ingressos</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Festival</p>
+                <h3>Festival Praça Viva</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Votuporanga · Parque das Águas</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Sábado · 18h</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>a partir de</span> R$ 100</p>
+                <a class="botao" href="#" aria-label="Comprar ingresso: Festival Praça Viva">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-imagem">
+              <img src="img/evento-standup.jpeg" alt="Microfone de pé em um palco intimista com cortinas roxas" width="1200" height="896" loading="lazy">
+              <time class="data" datetime="2026-12-04"><strong>04</strong><span>DEZ</span></time>
+              <span class="selo">Disponível</span>
+            </div>
+            <div class="card-corpo">
+              <div class="card-info">
+                <p class="categoria-evento">Stand-up</p>
+                <h3>Noite de Stand-up</h3>
+                <ul class="meta">
+                  <li><img src="img/ico-local.png" alt="" width="18" height="18"> Cosmorama · Casa Holofote</li>
+                  <li><img src="img/ico-relogio.png" alt="" width="18" height="18"> Sexta · 21h</li>
+                </ul>
+              </div>
+              <div class="card-rodape">
+                <p class="preco"><span>a partir de</span> R$ 50</p>
+                <a class="botao" href="#" aria-label="Comprar ingresso: Noite de Stand-up">Comprar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Evento em destaque -->
+    <section class="destaque">
+      <div class="container">
+        <div class="destaque-box">
+          <div class="destaque-imagem"></div>
+          <div class="destaque-info">
+            <span class="hero-tag">Em destaque</span>
+            <h2>Festival Praça Viva</h2>
+            <p>Um dia inteiro de música ao ar livre, com bandas locais, feira gastronômica e espaço para toda a família.</p>
+            <ul class="meta meta-claro">
+              <li><img src="img/ico-calendario-claro.png" alt="" width="18" height="18"> <time datetime="2026-11-28">Sábado, 28 de novembro</time></li>
+              <li><img src="img/ico-local-claro.png" alt="" width="18" height="18"> Votuporanga · Parque das Águas</li>
+            </ul>
+            <div class="destaque-acoes">
+              <p class="preco"><span>a partir de</span> R$ 100</p>
+              <a class="botao" href="#" aria-label="Garantir ingresso: Festival Praça Viva">Garantir ingresso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona" class="secao secao-branca">
+      <div class="container">
+        <div class="titulo-secao titulo-centro">
+          <h2>Como funciona</h2>
+          <p>Três passos entre você e o seu próximo evento.</p>
+        </div>
+        <ol class="passos">
+          <li>
+            <span class="passo-numero">1</span>
+            <h3>Escolha o evento</h3>
+            <p>Busque por categoria, cidade ou data e veja os detalhes de cada evento.</p>
+          </li>
+          <li>
+            <span class="passo-numero">2</span>
+            <h3>Selecione o ingresso</h3>
+            <p>Defina a quantidade, confira o valor e finalize a compra em poucos cliques.</p>
+          </li>
+          <li>
+            <span class="passo-numero">3</span>
+            <h3>Receba no celular</h3>
+            <p>O ingresso chega com QR Code. É só apresentar na entrada.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div>
+          <h2>Não perca nenhum evento</h2>
+          <p>Receba as novidades da agenda de Votuporanga e região no seu e-mail.</p>
+        </div>
+        <form class="form-newsletter" action="#" method="post">
+          <input type="email" name="email" placeholder="Seu melhor e-mail" aria-label="Seu e-mail" required>
+          <button class="botao botao-secundario" type="submit">Quero receber</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé: informações da marca, links, contato e avisos -->
+  <footer id="contato" class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <p class="rodape-marca">
+            <img src="img/logo-claro.png" alt="" width="62" height="32">
+            <span>Ingresso Já</span>
+          </p>
+          <p>Shows, teatro, esportes, palestras e festivais de Votuporanga e região em uma única plataforma.</p>
+          <ul class="redes">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Eventos</h3>
+          <ul>
+            <li><a href="#eventos">Shows</a></li>
+            <li><a href="#eventos">Teatro</a></li>
+            <li><a href="#eventos">Esportes</a></li>
+            <li><a href="#eventos">Palestras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ajuda</h3>
+          <ul>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Política de troca</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <address>
+            <p><a href="mailto:contato@ingressoja.exemplo">contato@ingressoja.exemplo</a></p>
+            <p>(00) 0000-0000</p>
+            <p>Segunda a sexta, das 9h às 18h</p>
+          </address>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <p>Ingresso Já é uma plataforma fictícia, criada para fins didáticos. Eventos, locais e preços são inventados.</p>
+        <ul class="links-legais">
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#topo">Voltar ao topo</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
